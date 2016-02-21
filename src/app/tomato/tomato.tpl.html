@@ -1,0 +1,34 @@
+<div class="row">
+  <h1 class="page-header">
+    The tomato market
+  </h1>
+    <p>{{ error }}</p>
+  <form>
+    Size: <input type="text" name="listSize" id="inputListSize" ng-model="tomatoList.size">    <input type="submit" value="Submit" ng-click="updateUser()">
+  </form>
+
+    <table>
+      <thead>
+      <tr>
+        <th style="min-width: 50px; margin: 0px 10px;">No.</th>
+        <th style="min-width: 300px; margin: 0px 10px;">UDDI</th>
+        <th style="min-width: 150px;">Provider</th>
+        <th style="min-width: 100px;">Tomatoes</th>
+        <th style="width:200px;">Date</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="tomato in tomatoList">
+        <td>{{$index+1}}</td>
+        <td>{{tomato.uddi}}</td>
+        <td>{{tomato.provider}}</td>
+        <td>{{tomato.tomatoes}}</td>
+        <td>{{tomato.timestamp}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+
+</div>
+

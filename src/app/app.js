@@ -1,14 +1,18 @@
 angular.module( 'ngBoilerplate', [
   'templates-app',
   'templates-common',
-  'ngBoilerplate.home',
-  'ngBoilerplate.about',
+  'ngResource',
+  'tomatoApp.tomato',
+  'tomatoApp.services',
   'ui.router'
+
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/home' );
+  $urlRouterProvider.otherwise( '/tomato' );
 })
+
+.constant('TOMATO_REST_API', 'http://localhost:8080/tomatoes')
 
 .run( function run () {
 })
