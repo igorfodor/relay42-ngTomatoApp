@@ -11,7 +11,14 @@ The url for the Tomato REST-API is configured in ```src/app/app.js``` simply cha
 
 ## Starting the app
 
-Simply type ```$ grunt build``` in the root directory where you checked out this project. Open a browser and in the address field type
+Simply type the following in the root directory where you checked out this project.
+```
+$ npm install
+$ bower install
+$ grunt build
+```
+ Open a browser and in the address field type
 
 file:///{local_path_to_app}/TomatoApp/build/index.html
+
 
