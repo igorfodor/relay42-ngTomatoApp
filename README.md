@@ -1,13 +1,17 @@
-# The `src` Directory
-
-## Overview
+# Overview
 
 To run the app you need a browser plugin to "Allow-Control-Allow-Origin" otherwise you get a security exception in your browser.
 
-For chrome you can install the plugin
+For chrome you can install the plugin Allow-Control-Allow-Origin.
+
+## Configuration
+The url for the Tomato REST-API is configured in ```src/app/app.js``` simply change the value to match your settings of the deployed REST-API.
+
+```.constant('TOMATO_REST_API', 'http://localhost:8080/tomato-rest/tomatoes')```
 
 ## Starting the app
 
-Simply type ```$ grunt watch``` in the root directory of this project and in the browser address field type
+Simply type ```$ grunt build``` in the root directory where you checked out this project. Open a browser and in the address field type
 
-file:///{path_to_app}/TomatoApp/build/index.html
+file:///{local_path_to_app}/TomatoApp/build/index.html
+

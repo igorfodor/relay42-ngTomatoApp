@@ -21,7 +21,7 @@ angular.module( 'tomatoApp.tomato', [
     .controller('TomatoCtrl', ['$scope', 'TomatoFactory',
     function ($scope, TomatoFactory) {
 
-        //get N items from service and update list
+        //handler for submit button. Gets N items from res-api and updates list
         $scope.updateUser = function () {
             TomatoFactory.queryWithLimit({size: $scope.tomatoList.size}, function(data) {
                 $scope.error = null;
@@ -34,7 +34,7 @@ angular.module( 'tomatoApp.tomato', [
                 }
             });
         };
-        //initial data
+        //fetch initial list (3 items)
         $scope.tomatoList = TomatoFactory.query();
 
     }]);

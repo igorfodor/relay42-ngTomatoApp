@@ -12,7 +12,7 @@ angular.module( 'ngBoilerplate', [
   $urlRouterProvider.otherwise( '/tomato' );
 })
 
-.constant('TOMATO_REST_API', 'http://localhost:8080/tomatoes')
+.constant('TOMATO_REST_API', 'http://localhost:8080/tomato-rest/tomatoes')
 
 .run( function run () {
 })
