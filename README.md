@@ -11,8 +11,13 @@ The url for the Tomato REST-API is configured in ```src/app/app.js``` simply cha
 
 ## Starting the app
 
+The app is build on ngBoilerplate, for more details please see
+
+https://github.com/ngbp/ngbp
+
 Simply type the following in the root directory where you checked out this project.
 ```
+$ sudo npm -g install grunt-cli karma bower
 $ npm install
 $ bower install
 $ grunt build
